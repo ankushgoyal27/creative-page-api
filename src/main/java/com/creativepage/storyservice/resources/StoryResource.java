@@ -2,13 +2,14 @@ package com.creativepage.storyservice.resources;
 
 import java.util.List;
 
+import com.creativepage.storyservice.models.Story;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.creativepage.storyservice.models.Story;
+import com.creativepage.storyservice.models.Author;
 import com.creativepage.storyservice.services.StoryService;
 
 @RestController
@@ -24,9 +25,7 @@ public class StoryResource {
 	}
 	
 	@RequestMapping(method = RequestMethod.POST)
-	public void addStory(@RequestBody Story story){
+	public void addStory(@RequestBody Story story) {
 		storyService.addStory(story);
 	}
-	
-	
 }

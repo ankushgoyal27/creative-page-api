@@ -1,6 +1,7 @@
 package com.creativepage.storyservice.models;
 
 import java.util.Date;
+import java.util.List;
 import java.util.Set;
 
 import org.springframework.data.annotation.Id;
@@ -11,15 +12,13 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-@ToString
 @NoArgsConstructor
 @AllArgsConstructor
+@Getter
+@Setter
 public class Story {
 
-	@Id
-	@Getter @Setter private long storyId;
-	@Getter @Setter private String title;
-	@Getter @Setter private Set<String> imageURL;
-	@Getter @Setter private String description;
-	@Getter @Setter private Date timestamp;
+	 private String title;
+	 private List<SubStory> subStories;
+	 private Date timestamp;
 }
