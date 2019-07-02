@@ -1,12 +1,11 @@
 package com.creativepage.storyservice.services;
 
-import java.util.List;
-
+import com.creativepage.storyservice.models.Story;
+import com.creativepage.storyservice.repository.StoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.creativepage.storyservice.models.Story;
-import com.creativepage.storyservice.repository.StoryRepository;
+import java.util.List;
 
 @Service
 public class StoryService {
