@@ -3,12 +3,10 @@ package com.creativepage.storyservice.resources;
 
 import com.creativepage.storyservice.models.Author;
 import com.creativepage.storyservice.services.AuthorService;
-import com.creativepage.storyservice.services.StoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.FileNotFoundException;
-import java.util.List;
 
 @RestController
 @RequestMapping("/author")
